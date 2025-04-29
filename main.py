@@ -25,6 +25,7 @@ def main():
                 return
         pygame.Surface.fill(screen, "BLACK")  # Fill the screen with black color
         player.draw(screen)  # Draw the player on the screen
+        player.update(dt)
         pygame.display.flip()  # Update the screen with the new content
         
         timeClock.tick(60)  # pauses the game loop until 1/60th of a second has passed
